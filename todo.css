@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7cfc, #9e72f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+.container {
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+.done{
+    background-color: red;
+}
+
+input:focus {
+    border-color: #9e72f1;
+    box-shadow: 0 0 5px rgba(158, 114, 241, 0.6);
+}
+
+#add {
+    width: 20%;
+    padding: 10px;
+    background-color: #9e72f1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#add:hover {
+    background-color: #6e7cfc;
+    transform: scale(1.05);
+}
+
+/* استایل لیست وظایف */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+li span {
+    color: black;
+    flex: 1; 
+    text-align: left;
+    margin-right: 10px;
+}
+
+li button {
+    margin-left: 5px;
+    padding: 10px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button:hover {
+    background-color: #0056b3;
+}
+li .cheked {
+    text-decoration: line-through;
+}
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+button:hover {
+    background-color: #ddd;
+}
+button:nth-child(1) {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+button:nth-child(4) {
+    background-color: #05ac66;
+    color: white;
+}
+button:nth-child(4):hover {
+    background-color: #077234;
+}
+button:nth-child(2) {
+    background-color: #f9b44c;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #f89c34;
+}
+button:nth-child(3) {
+    background-color: #f11010;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #b80606;
+}
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
